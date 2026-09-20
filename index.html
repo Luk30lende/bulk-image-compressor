@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk Image Compressor Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- JSZip Library for Bulk Downloading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/utif.js/3.1.0/UTIF.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <div class="ic-main-wrapper">
+      <div class="ic-title">Image Compressor</div>
+
+      <!-- The Drag and Drop Zone -->
+      <div class="ic-dropzone-area" id="icDropzone">
+        <input
+          type="file"
+          id="icFileInput"
+          multiple
+          accept=".jpg,.jpeg,.png,.webp,.gif,.bmp,.tif,.tiff,.avif,image/jpeg,image/png,image/webp,image/gif,image/bmp,image/tiff,image/avif"
+          style="display: none"
+        />
+
+        <div class="ic-icon-box">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7l-3 3.72L9 13l-3 4h14l-4-5z"
+            />
+          </svg>
+        </div>
+
+        <div class="ic-primary-text">
+          Drop images here or
+          <span class="ic-browse-link" id="icBrowseBtn">click to browse</span>
+        </div>
+        <div class="ic-secondary-text">
+          Multiple images supported — bulk compress & download as ZIP
+        </div>
+
+        <div class="ic-format-tags">
+          <span>JPEG</span><span>PNG</span><span>WebP</span><span>GIF</span
+          ><span>BMP</span><span>TIFF</span><span>AVIF</span>
+        </div>
+      </div>
+
+      <!-- Action Panel (Hidden by default) -->
+      <div class="ic-action-panel" id="icActionPanel">
+        <div id="icStatusText" class="ic-status-msg">0 images selected</div>
+        <button class="ic-btn-primary" id="icCompressBtn">
+          Compress & Download ZIP
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

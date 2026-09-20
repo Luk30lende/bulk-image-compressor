@@ -1,0 +1,156 @@
+.ic-main-wrapper {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  max-width: 850px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(23, 23, 43, 0.05);
+}
+
+.ic-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #17172b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Upload / Dropzone */
+.ic-dropzone-area {
+  border: 1.5px dashed #d9d7ea;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafaff;
+  transition: all 0.3s ease;
+}
+
+/* Active Drag State */
+.ic-dropzone-area.dragover {
+  border-color: #6d5dfb;
+  background-color: #f3f1ff;
+  box-shadow: 0 0 0 4px rgba(109, 93, 251, 0.08);
+}
+
+/* Upload Icon */
+.ic-icon-box {
+  width: 64px;
+  height: 64px;
+  background-color: #eeecff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: #6d5dfb;
+}
+
+.ic-icon-box svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+/* Main Upload Text */
+.ic-primary-text {
+  font-size: 1.15rem;
+  color: #17172b;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.ic-browse-link {
+  color: #6d5dfb;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ic-browse-link:hover {
+  color: #5848d8;
+  text-decoration: underline;
+}
+
+/* Supporting Text */
+.ic-secondary-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Supported Format Tags */
+.ic-format-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ic-format-tags span {
+  border: 1px solid #e4e4f0;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 0.8rem;
+  padding: 6px 18px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.ic-format-tags span:hover {
+  border-color: #c9c5f5;
+  color: #6d5dfb;
+  background: #f9f8ff;
+}
+
+/* Action Panel */
+.ic-action-panel {
+  margin-top: 25px;
+  display: none;
+  text-align: center;
+  background: #f7f7fc;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e4e4f0;
+}
+
+/* Primary Button */
+.ic-btn-primary {
+  background: #6d5dfb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(109, 93, 251, 0.2);
+}
+
+.ic-btn-primary:hover {
+  background: #5848d8;
+  box-shadow: 0 6px 16px rgba(109, 93, 251, 0.25);
+  transform: translateY(-1px);
+}
+
+.ic-btn-primary:active {
+  transform: translateY(0);
+}
+
+.ic-btn-primary:disabled {
+  background: #a8a8b8;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Status Message */
+.ic-status-msg {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #3f3f52;
+  font-weight: 500;
+}
